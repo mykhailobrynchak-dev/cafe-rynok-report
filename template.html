@@ -882,12 +882,15 @@ if (wData.length) {
       const rating = c.avg_rating;
       const prevRating = p?.avg_rating;
       const ratingColor = rating != null ? (rating >= 4.9 ? 'var(--green)' : rating < 4.5 ? 'var(--red)' : '') : '';
-      let ratingWow = '<span class="wow-na">—</span>';
-      if (rating != null && prevRating != null && prevRating > 0) {
+      let ratingWow = '';
+      if (rating != null && prevRating != null) {
         const rd = rating - prevRating;
-        if (rd > 0.01) ratingWow = `<span class="wow-up">▲ +${rd.toFixed(2)}</span>`;
-        else if (rd < -0.01) ratingWow = `<span class="wow-down">▼ ${rd.toFixed(2)}</span>`;
-        else ratingWow = '<span class="wow-na">≈</span>';
+        const sign = rd >= 0 ? '+' : '';
+        if (rd > 0.005) ratingWow = `<span class="wow-up">${sign}${rd.toFixed(2)}</span>`;
+        else if (rd < -0.005) ratingWow = `<span class="wow-down">${sign}${rd.toFixed(2)}</span>`;
+        else ratingWow = `<span class="wow-na">0.00</span>`;
+      } else if (rating != null) {
+        ratingWow = '<span class="wow-na">new</span>';
       }
       html += `<tr><td style="white-space:nowrap;max-width:200px;overflow:hidden;text-overflow:ellipsis">${shortName.replace('КАФЕРИНОК ','')}</td>`;
       html += `<td>${c.orders}</td><td>${wowBadge(c.orders, p?.orders)}</td>`;

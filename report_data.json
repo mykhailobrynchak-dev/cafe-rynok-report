@@ -2,7 +2,7 @@
   "generated_at": "2026-05-14 17:00 UTC",
   "data_start": "2025-12-01",
   "weekly_start": "2026-04-13",
-  "weekly_end": "2026-05-10",
+  "weekly_end": "2026-05-17",
   "store_weeks_start": "2026-03-02",
   "partner_name": "CAFE RYNOK",
   "city": "Lviv",
@@ -530,6 +530,17 @@
         "users_activated": 1,
         "active_users": 228,
         "refund_rate_pct": 0.47
+      },
+      {
+        "period": "2026-05-11",
+        "orders": 288,
+        "merchant_price_eur": 3367.9,
+        "merchant_price_per_order": 11.69,
+        "gmv_eur": 3770.95,
+        "aov_eur": 13.09,
+        "users_activated": 2,
+        "active_users": 213,
+        "refund_rate_pct": 0.1
       }
     ],
     "operational": [
@@ -576,6 +587,17 @@
         "late_pickup_rate": 16.01,
         "avg_delivery_minutes": 23.7,
         "avg_courier_delivery_min": 21.59
+      },
+      {
+        "period": "2026-05-11",
+        "delivered_orders": 288,
+        "active_stores": 11,
+        "honey_order_rate": 56.94,
+        "bad_order_rate": 3.82,
+        "late_delivery_rate": 20.83,
+        "late_pickup_rate": 15.97,
+        "avg_delivery_minutes": 25.91,
+        "avg_courier_delivery_min": 22.78
       }
     ],
     "replacement_adjustment": [
@@ -598,6 +620,11 @@
         "period": "2026-05-04",
         "adjustment_rate": 10.9,
         "replacement_rate": 94.12
+      },
+      {
+        "period": "2026-05-11",
+        "adjustment_rate": 18.71,
+        "replacement_rate": 87.27
       }
     ],
     "failed_orders": [
@@ -628,6 +655,13 @@
         "delivered": 306,
         "failed_total": 13,
         "failed_rate_pct": 4.08
+      },
+      {
+        "period": "2026-05-11",
+        "total_placed": 297,
+        "delivered": 288,
+        "failed_total": 9,
+        "failed_rate_pct": 3.03
       }
     ],
     "failed_reasons": [
@@ -732,6 +766,18 @@
         "reason": "manually_failed_by_user",
         "actor_type": "client",
         "cnt": 2
+      },
+      {
+        "period": "2026-05-11",
+        "reason": "manually_failed_by_cs",
+        "actor_type": "provider",
+        "cnt": 6
+      },
+      {
+        "period": "2026-05-11",
+        "reason": "did_not_respond",
+        "actor_type": "provider",
+        "cnt": 3
       }
     ],
     "campaigns": [
@@ -762,6 +808,13 @@
         "bolt_spend_eur": 74.98,
         "merchant_spend_eur": 21.27,
         "campaign_orders": 151
+      },
+      {
+        "period": "2026-05-11",
+        "campaigns_discount_eur": 78.95,
+        "bolt_spend_eur": 77.83,
+        "merchant_spend_eur": 1.13,
+        "campaign_orders": 140
       }
     ],
     "acceptance_availability": [
@@ -787,6 +840,12 @@
         "period": "2026-05-04",
         "acceptance_rate": 97.2,
         "availability_rate": 93.0,
+        "avg_rating": 4.72
+      },
+      {
+        "period": "2026-05-11",
+        "acceptance_rate": 99.0,
+        "availability_rate": 92.8,
         "avg_rating": 4.72
       }
     ]
