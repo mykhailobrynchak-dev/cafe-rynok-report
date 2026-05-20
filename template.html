@@ -293,7 +293,7 @@ tr:hover{background:#f9fafb}
             <th>Bad %</th>
             <th>Late Del %</th>
             <th>Duration (хв)</th>
-            <th>Rating</th><th>WoW</th>
+            <th style="border-left:2px solid var(--accent);padding-left:12px">Rating</th><th style="border-right:2px solid var(--accent);padding-right:12px">WoW</th>
           </tr>
         </thead>
         <tbody id="locStoreBody"></tbody>
@@ -872,7 +872,7 @@ if (wData.length) {
     html += `<td>€${fmt(totMP)}</td><td>${wowBadge(totMP, prevTotMP)}</td>`;
     html += `<td>€${totOrd > 0 ? n(totMP/totOrd, 2) : '—'}</td>`;
     html += `<td>${pct(avgHoney)}</td><td>${pct(avgBad)}</td><td>${pct(avgLate)}</td><td>${n(avgDur, 1)}</td>`;
-    html += `<td>${avgRating != null ? n(avgRating, 3) : '—'}</td><td>—</td></tr>`;
+    html += `<td style="border-left:2px solid var(--accent);padding-left:12px">${avgRating != null ? n(avgRating, 3) : '—'}</td><td style="border-right:2px solid var(--accent);padding-right:12px">—</td></tr>`;
     html += '<tr><td colspan="12" style="height:3px;background:var(--border);padding:0"></td></tr>';
 
     metrics.forEach(m => {
@@ -897,7 +897,7 @@ if (wData.length) {
       html += `<td style="color:${c.bad_order_rate > 10 ? 'var(--red)' : ''}">${pct(c.bad_order_rate)}</td>`;
       html += `<td style="color:${c.late_delivery_rate > 25 ? 'var(--red)' : ''}">${pct(c.late_delivery_rate)}</td>`;
       html += `<td>${n(c.avg_delivery_minutes, 1)}</td>`;
-      html += `<td style="color:${ratingColor}">${rating != null ? n(rating, 3) : '—'}</td><td>${ratingWow}</td></tr>`;
+      html += `<td style="border-left:2px solid var(--accent);padding-left:12px;color:${ratingColor}">${rating != null ? n(rating, 3) : '—'}</td><td style="border-right:2px solid var(--accent);padding-right:12px">${ratingWow}</td></tr>`;
     });
     body.innerHTML = html;
 

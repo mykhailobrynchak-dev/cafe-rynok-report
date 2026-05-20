@@ -2138,6 +2138,138 @@
       "late_pickup_rate": 0.0,
       "avg_delivery_minutes": 15.38,
       "avg_rating": null
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Замарстинівська, 55Д",
+      "orders": 53,
+      "merchant_price_eur": 652.22,
+      "honey_order_rate": 56.6,
+      "bad_order_rate": 9.43,
+      "late_delivery_rate": 20.75,
+      "late_pickup_rate": 18.87,
+      "avg_delivery_minutes": 28.27,
+      "avg_rating": 4.556
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Зелена",
+      "orders": 42,
+      "merchant_price_eur": 429.93,
+      "honey_order_rate": 64.29,
+      "bad_order_rate": 2.38,
+      "late_delivery_rate": 9.52,
+      "late_pickup_rate": 11.9,
+      "avg_delivery_minutes": 20.74,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Героїв УПА",
+      "orders": 33,
+      "merchant_price_eur": 445.94,
+      "honey_order_rate": 42.42,
+      "bad_order_rate": 6.06,
+      "late_delivery_rate": 33.33,
+      "late_pickup_rate": 12.12,
+      "avg_delivery_minutes": 27.41,
+      "avg_rating": 4.625
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Княгині Ольги",
+      "orders": 32,
+      "merchant_price_eur": 400.36,
+      "honey_order_rate": 65.63,
+      "bad_order_rate": 0.0,
+      "late_delivery_rate": 31.25,
+      "late_pickup_rate": 9.38,
+      "avg_delivery_minutes": 27.78,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Стрийська",
+      "orders": 27,
+      "merchant_price_eur": 315.24,
+      "honey_order_rate": 55.56,
+      "bad_order_rate": 0.0,
+      "late_delivery_rate": 22.22,
+      "late_pickup_rate": 22.22,
+      "avg_delivery_minutes": 24.27,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Краківська",
+      "orders": 25,
+      "merchant_price_eur": 261.96,
+      "honey_order_rate": 60.0,
+      "bad_order_rate": 4.0,
+      "late_delivery_rate": 16.0,
+      "late_pickup_rate": 8.0,
+      "avg_delivery_minutes": 24.7,
+      "avg_rating": 3.75
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Угорська",
+      "orders": 23,
+      "merchant_price_eur": 265.88,
+      "honey_order_rate": 52.17,
+      "bad_order_rate": 0.0,
+      "late_delivery_rate": 21.74,
+      "late_pickup_rate": 17.39,
+      "avg_delivery_minutes": 31.41,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Спартак/ Замарстинівська, 170Е",
+      "orders": 23,
+      "merchant_price_eur": 226.74,
+      "honey_order_rate": 56.52,
+      "bad_order_rate": 4.35,
+      "late_delivery_rate": 21.74,
+      "late_pickup_rate": 21.74,
+      "avg_delivery_minutes": 22.7,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Володимира Великого",
+      "orders": 15,
+      "merchant_price_eur": 187.26,
+      "honey_order_rate": 80.0,
+      "bad_order_rate": 6.67,
+      "late_delivery_rate": 13.33,
+      "late_pickup_rate": 26.67,
+      "avg_delivery_minutes": 25.7,
+      "avg_rating": 4.667
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК Личаківська",
+      "orders": 11,
+      "merchant_price_eur": 112.77,
+      "honey_order_rate": 45.45,
+      "bad_order_rate": 0.0,
+      "late_delivery_rate": 9.09,
+      "late_pickup_rate": 18.18,
+      "avg_delivery_minutes": 24.1,
+      "avg_rating": 4.667
+    },
+    {
+      "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК пл. Є. Петрушевича",
+      "orders": 4,
+      "merchant_price_eur": 69.6,
+      "honey_order_rate": 0.0,
+      "bad_order_rate": 0.0,
+      "late_delivery_rate": 25.0,
+      "late_pickup_rate": 25.0,
+      "avg_delivery_minutes": 33.13,
+      "avg_rating": null
     }
   ]
 }
