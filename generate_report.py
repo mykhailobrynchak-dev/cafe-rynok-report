@@ -446,8 +446,52 @@ def main():
         key = (entry["period"], entry["provider_name"])
         entry["avg_rating"] = rating_map.get(key)
 
+    # Fetch UAH/EUR exchange rates
+    print("Fetching exchange rates...")
+    rates_data = to_serializable(run_query(cursor, f"""
+        SELECT DATE_FORMAT(f.order_created_date, 'yyyy-MM') AS period,
+            SUM(f.order_gmv) / NULLIF(SUM(f.order_gmv_eur), 0) AS uah_per_eur
+        FROM ng_delivery_spark.fact_order_delivery f
+            JOIN ng_delivery_spark.dim_provider_v2 p ON f.provider_id = p.provider_id
+        WHERE p.country_code = 'ua' AND p.group_name = '{PARTNER_NAME}'
+          AND f.order_state = 'delivered' AND f.order_created_date >= '{DATA_START}'
+        GROUP BY 1
+    """))
+    rates = {r["period"]: float(r["uah_per_eur"]) for r in rates_data if r.get("uah_per_eur")}
+
     cursor.close()
     conn.close()
+
+    # Convert EUR → UAH
+    def get_rate(period):
+        if len(period) == 7:
+            return rates.get(period, 51.0)
+        return rates.get(period[:7], 51.0)
+
+    eur_keys = ["merchant_price_eur", "merchant_price_per_order", "gmv_eur", "aov_eur"]
+    camp_keys = ["campaigns_discount_eur", "bolt_spend_eur", "merchant_spend_eur"]
+
+    for row in fin_m + fin_w:
+        r = get_rate(row["period"])
+        for k in eur_keys:
+            if k in row and row[k] is not None:
+                row[k] = round(float(row[k]) * r, 2 if "per_order" in k or "aov" in k else 0)
+
+    for row in camp_m + camp_w:
+        r = get_rate(row["period"])
+        for k in camp_keys:
+            if k in row and row[k] is not None:
+                row[k] = round(float(row[k]) * r, 0)
+
+    for row in top_stores:
+        r = rates.get("2026-04", rates.get(max(rates.keys()), 51.0)) if rates else 51.0
+        if "merchant_price_eur" in row and row["merchant_price_eur"] is not None:
+            row["merchant_price_eur"] = round(float(row["merchant_price_eur"]) * r, 0)
+
+    for row in store_weekly:
+        r = get_rate(row["period"])
+        if "merchant_price_eur" in row and row["merchant_price_eur"] is not None:
+            row["merchant_price_eur"] = round(float(row["merchant_price_eur"]) * r, 0)
 
     report_data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
