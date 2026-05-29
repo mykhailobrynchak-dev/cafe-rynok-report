@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25 07:42 UTC",
+  "generated_at": "2026-05-29 08:50 UTC",
   "data_start": "2025-12-01",
   "weekly_start": "2026-04-27",
   "weekly_end": "2026-05-24",
@@ -17,7 +17,7 @@
         "aov_eur": 641.44,
         "users_activated": 31.0,
         "active_users": 759.0,
-        "refund_rate_pct": 0.4247234204556168
+        "refund_rate_pct": 0.42472342045561673
       },
       {
         "period": "2026-01",
@@ -28,7 +28,7 @@
         "aov_eur": 691.36,
         "users_activated": 41.0,
         "active_users": 1006.0,
-        "refund_rate_pct": 0.36785738784045907
+        "refund_rate_pct": 0.367857387840459
       },
       {
         "period": "2026-02",
@@ -50,7 +50,7 @@
         "aov_eur": 689.48,
         "users_activated": 26.0,
         "active_users": 846.0,
-        "refund_rate_pct": 0.14492741814474353
+        "refund_rate_pct": 0.14492741814474355
       },
       {
         "period": "2026-04",
@@ -61,18 +61,18 @@
         "aov_eur": 703.06,
         "users_activated": 23.0,
         "active_users": 810.0,
-        "refund_rate_pct": 0.20048031161186247
+        "refund_rate_pct": 0.20048031161186242
       },
       {
         "period": "2026-05",
-        "orders": 1040.0,
-        "merchant_price_eur": 641035.0,
-        "merchant_price_per_order": 616.38,
-        "gmv_eur": 715816.0,
-        "aov_eur": 688.28,
-        "users_activated": 9.0,
-        "active_users": 544.0,
-        "refund_rate_pct": 0.16535869784270282
+        "orders": 1281.0,
+        "merchant_price_eur": 805478.0,
+        "merchant_price_per_order": 628.79,
+        "gmv_eur": 897107.0,
+        "aov_eur": 700.32,
+        "users_activated": 10.0,
+        "active_users": 642.0,
+        "refund_rate_pct": 0.20984364878495068
       }
     ],
     "operational": [
@@ -96,7 +96,7 @@
         "late_delivery_rate": 32.36870310825295,
         "late_pickup_rate": 15.541264737406216,
         "avg_delivery_minutes": 36.0381296891747,
-        "avg_courier_delivery_min": 33.83626754146164
+        "avg_courier_delivery_min": 33.83626754146163
       },
       {
         "period": "2026-02",
@@ -129,18 +129,18 @@
         "late_delivery_rate": 21.09181141439206,
         "late_pickup_rate": 14.081885856079404,
         "avg_delivery_minutes": 26.361528122415223,
-        "avg_courier_delivery_min": 23.812028252161078
+        "avg_courier_delivery_min": 23.812028252161085
       },
       {
         "period": "2026-05",
-        "delivered_orders": 1040.0,
+        "delivered_orders": 1281.0,
         "active_stores": 11.0,
-        "honey_order_rate": 59.03846153846154,
-        "bad_order_rate": 4.903846153846154,
-        "late_delivery_rate": 20.865384615384617,
-        "late_pickup_rate": 15.96153846153846,
-        "avg_delivery_minutes": 24.987275641025644,
-        "avg_courier_delivery_min": 22.616211825860947
+        "honey_order_rate": 59.4847775175644,
+        "bad_order_rate": 4.996096799375488,
+        "late_delivery_rate": 21.54566744730679,
+        "late_pickup_rate": 15.690866510538642,
+        "avg_delivery_minutes": 25.12906583398387,
+        "avg_courier_delivery_min": 22.84149525316456
       }
     ],
     "replacement_adjustment": [
@@ -171,8 +171,8 @@
       },
       {
         "period": "2026-05",
-        "adjustment_rate": 15.31,
-        "replacement_rate": 85.52
+        "adjustment_rate": 14.61,
+        "replacement_rate": 86.21
       }
     ],
     "failed_orders": [
@@ -213,10 +213,10 @@
       },
       {
         "period": "2026-05",
-        "total_placed": 1073.0,
-        "delivered": 1040.0,
-        "failed_total": 33.0,
-        "failed_rate_pct": 3.075489282385834
+        "total_placed": 1319.0,
+        "delivered": 1281.0,
+        "failed_total": 38.0,
+        "failed_rate_pct": 2.8809704321455647
       }
     ],
     "failed_reasons": [
@@ -372,6 +372,12 @@
       },
       {
         "period": "2026-03",
+        "reason": "manually_failed_by_cs",
+        "actor_type": "courier",
+        "cnt": 1.0
+      },
+      {
+        "period": "2026-03",
         "reason": "closed",
         "actor_type": "provider",
         "cnt": 1.0
@@ -380,12 +386,6 @@
         "period": "2026-03",
         "reason": "too_many_orders",
         "actor_type": "provider",
-        "cnt": 1.0
-      },
-      {
-        "period": "2026-03",
-        "reason": "manually_failed_by_cs",
-        "actor_type": "courier",
         "cnt": 1.0
       },
       {
@@ -433,6 +433,12 @@
       {
         "period": "2026-04",
         "reason": "manually_failed_by_cs",
+        "actor_type": "courier",
+        "cnt": 1.0
+      },
+      {
+        "period": "2026-04",
+        "reason": "manually_failed_by_cs",
         "actor_type": "client",
         "cnt": 1.0
       },
@@ -443,39 +449,33 @@
         "cnt": 1.0
       },
       {
-        "period": "2026-04",
-        "reason": "manually_failed_by_cs",
-        "actor_type": "courier",
-        "cnt": 1.0
-      },
-      {
         "period": "2026-05",
         "reason": "did_not_respond",
         "actor_type": "provider",
-        "cnt": 15.0
+        "cnt": 17.0
       },
       {
         "period": "2026-05",
         "reason": "manually_failed_by_cs",
         "actor_type": "provider",
-        "cnt": 12.0
+        "cnt": 13.0
       },
       {
         "period": "2026-05",
         "reason": "manually_failed_by_user",
         "actor_type": "client",
-        "cnt": 4.0
-      },
-      {
-        "period": "2026-05",
-        "reason": "closed",
-        "actor_type": "provider",
-        "cnt": 1.0
+        "cnt": 6.0
       },
       {
         "period": "2026-05",
         "reason": "manually_failed_by_cs",
         "actor_type": "courier",
+        "cnt": 1.0
+      },
+      {
+        "period": "2026-05",
+        "reason": "closed",
+        "actor_type": "provider",
         "cnt": 1.0
       }
     ],
@@ -517,10 +517,10 @@
       },
       {
         "period": "2026-05",
-        "campaigns_discount_eur": 29804.0,
-        "bolt_spend_eur": 13413.0,
-        "merchant_spend_eur": 16391.0,
-        "campaign_orders": 581.0
+        "campaigns_discount_eur": 49810.0,
+        "bolt_spend_eur": 16522.0,
+        "merchant_spend_eur": 33288.0,
+        "campaign_orders": 789.0
       }
     ],
     "acceptance_availability": [
@@ -557,8 +557,8 @@
       {
         "period": "2026-05",
         "acceptance_rate": 98.3,
-        "availability_rate": 92.3,
-        "avg_rating": 4.775
+        "availability_rate": 92.4,
+        "avg_rating": 4.779
       }
     ]
   },
@@ -578,32 +578,32 @@
       {
         "period": "2026-05-04",
         "orders": 306.0,
-        "merchant_price_eur": 188927.0,
-        "merchant_price_per_order": 617.41,
-        "gmv_eur": 211146.0,
-        "aov_eur": 690.02,
+        "merchant_price_eur": 188931.0,
+        "merchant_price_per_order": 617.42,
+        "gmv_eur": 211151.0,
+        "aov_eur": 690.03,
         "users_activated": 1.0,
         "active_users": 228.0,
-        "refund_rate_pct": 0.46729772001507547
+        "refund_rate_pct": 0.46729772001507536
       },
       {
         "period": "2026-05-11",
         "orders": 288.0,
-        "merchant_price_eur": 173305.0,
-        "merchant_price_per_order": 601.75,
-        "gmv_eur": 194045.0,
-        "aov_eur": 673.77,
+        "merchant_price_eur": 173308.0,
+        "merchant_price_per_order": 601.77,
+        "gmv_eur": 194049.0,
+        "aov_eur": 673.78,
         "users_activated": 2.0,
         "active_users": 213.0,
-        "refund_rate_pct": 0.10151382407063317
+        "refund_rate_pct": 0.10151382407063314
       },
       {
         "period": "2026-05-18",
         "orders": 338.0,
-        "merchant_price_eur": 213579.0,
-        "merchant_price_per_order": 631.89,
-        "gmv_eur": 237019.0,
-        "aov_eur": 701.24,
+        "merchant_price_eur": 213583.0,
+        "merchant_price_per_order": 631.9,
+        "gmv_eur": 237024.0,
+        "aov_eur": 701.25,
         "users_activated": 6.0,
         "active_users": 251.0,
         "refund_rate_pct": 0.0
@@ -630,7 +630,7 @@
         "late_delivery_rate": 19.934640522875817,
         "late_pickup_rate": 16.013071895424837,
         "avg_delivery_minutes": 23.699400871459694,
-        "avg_courier_delivery_min": 21.594499449944994
+        "avg_courier_delivery_min": 21.594499449944998
       },
       {
         "period": "2026-05-11",
@@ -648,10 +648,10 @@
         "delivered_orders": 338.0,
         "active_stores": 11.0,
         "honey_order_rate": 59.76331360946746,
-        "bad_order_rate": 6.21301775147929,
+        "bad_order_rate": 6.508875739644971,
         "late_delivery_rate": 21.597633136094675,
         "late_pickup_rate": 15.976331360946746,
-        "avg_delivery_minutes": 25.085650887573962,
+        "avg_delivery_minutes": 25.085650887573966,
         "avg_courier_delivery_min": 22.8937003968254
       }
     ],
@@ -710,14 +710,14 @@
     "failed_reasons": [
       {
         "period": "2026-04-27",
-        "reason": "manually_failed_by_user",
-        "actor_type": "client",
+        "reason": "manually_failed_by_cs",
+        "actor_type": "provider",
         "cnt": 5.0
       },
       {
         "period": "2026-04-27",
-        "reason": "manually_failed_by_cs",
-        "actor_type": "provider",
+        "reason": "manually_failed_by_user",
+        "actor_type": "client",
         "cnt": 5.0
       },
       {
@@ -782,14 +782,14 @@
       },
       {
         "period": "2026-05-18",
-        "reason": "closed",
-        "actor_type": "provider",
+        "reason": "manually_failed_by_cs",
+        "actor_type": "courier",
         "cnt": 1.0
       },
       {
         "period": "2026-05-18",
-        "reason": "manually_failed_by_cs",
-        "actor_type": "courier",
+        "reason": "closed",
+        "actor_type": "provider",
         "cnt": 1.0
       }
     ],
@@ -819,7 +819,7 @@
         "period": "2026-05-18",
         "campaigns_discount_eur": 18464.0,
         "bolt_spend_eur": 3648.0,
-        "merchant_spend_eur": 14815.0,
+        "merchant_spend_eur": 14816.0,
         "campaign_orders": 235.0
       }
     ],
@@ -846,15 +846,15 @@
         "period": "2026-05-18",
         "acceptance_rate": 98.8,
         "availability_rate": 91.2,
-        "avg_rating": 4.855
+        "avg_rating": 4.861
       }
     ]
   },
   "acceptance_current": [
     {
-      "acceptance_rate": 98.8,
-      "availability_rate": 91.2,
-      "avg_rating": 4.855
+      "acceptance_rate": 98.4,
+      "availability_rate": 92.6,
+      "avg_rating": 4.778
     }
   ],
   "top_stores": [
@@ -959,7 +959,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 17.02127659574468,
       "late_pickup_rate": 25.53191489361702,
-      "avg_delivery_minutes": 25.429078014184398,
+      "avg_delivery_minutes": 25.429078014184405,
       "avg_rating": 5.0
     },
     {
@@ -971,7 +971,7 @@
       "bad_order_rate": 2.380952380952381,
       "late_delivery_rate": 21.428571428571427,
       "late_pickup_rate": 9.523809523809524,
-      "avg_delivery_minutes": 51.437698412698424,
+      "avg_delivery_minutes": 51.43769841269841,
       "avg_rating": 4.2
     },
     {
@@ -983,7 +983,7 @@
       "bad_order_rate": 9.67741935483871,
       "late_delivery_rate": 38.70967741935484,
       "late_pickup_rate": 12.903225806451612,
-      "avg_delivery_minutes": 29.47956989247312,
+      "avg_delivery_minutes": 29.479569892473116,
       "avg_rating": 5.0
     },
     {
@@ -995,7 +995,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 16.666666666666664,
       "late_pickup_rate": 16.666666666666664,
-      "avg_delivery_minutes": 23.973888888888887,
+      "avg_delivery_minutes": 23.97388888888889,
       "avg_rating": 5.0
     },
     {
@@ -1019,7 +1019,7 @@
       "bad_order_rate": 3.4482758620689653,
       "late_delivery_rate": 10.344827586206897,
       "late_pickup_rate": 13.793103448275861,
-      "avg_delivery_minutes": 23.072413793103454,
+      "avg_delivery_minutes": 23.07241379310345,
       "avg_rating": 5.0
     },
     {
@@ -1067,7 +1067,7 @@
       "bad_order_rate": 1.8867924528301887,
       "late_delivery_rate": 15.09433962264151,
       "late_pickup_rate": 16.9811320754717,
-      "avg_delivery_minutes": 21.610691823899376,
+      "avg_delivery_minutes": 21.61069182389937,
       "avg_rating": 5.0
     },
     {
@@ -1103,7 +1103,7 @@
       "bad_order_rate": 8.823529411764707,
       "late_delivery_rate": 29.411764705882355,
       "late_pickup_rate": 8.823529411764707,
-      "avg_delivery_minutes": 32.72647058823529,
+      "avg_delivery_minutes": 32.726470588235294,
       "avg_rating": 4.9
     },
     {
@@ -1151,7 +1151,7 @@
       "bad_order_rate": 19.047619047619047,
       "late_delivery_rate": 14.285714285714285,
       "late_pickup_rate": 14.285714285714285,
-      "avg_delivery_minutes": 27.687301587301583,
+      "avg_delivery_minutes": 27.68730158730159,
       "avg_rating": 4.0
     },
     {
@@ -1163,7 +1163,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 5.263157894736842,
       "late_pickup_rate": 10.526315789473683,
-      "avg_delivery_minutes": 20.650877192982456,
+      "avg_delivery_minutes": 20.650877192982453,
       "avg_rating": 5.0
     },
     {
@@ -1211,7 +1211,7 @@
       "bad_order_rate": 12.280701754385964,
       "late_delivery_rate": 33.33333333333333,
       "late_pickup_rate": 10.526315789473683,
-      "avg_delivery_minutes": 28.084502923976608,
+      "avg_delivery_minutes": 28.08450292397661,
       "avg_rating": 4.833
     },
     {
@@ -1223,7 +1223,7 @@
       "bad_order_rate": 4.081632653061225,
       "late_delivery_rate": 26.53061224489796,
       "late_pickup_rate": 20.408163265306122,
-      "avg_delivery_minutes": 25.13877551020408,
+      "avg_delivery_minutes": 25.138775510204084,
       "avg_rating": 4.9
     },
     {
@@ -1247,7 +1247,7 @@
       "bad_order_rate": 2.631578947368421,
       "late_delivery_rate": 18.421052631578945,
       "late_pickup_rate": 13.157894736842104,
-      "avg_delivery_minutes": 30.580263157894734,
+      "avg_delivery_minutes": 30.58026315789473,
       "avg_rating": 4.875
     },
     {
@@ -1295,7 +1295,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 20.0,
       "late_pickup_rate": 0.0,
-      "avg_delivery_minutes": 21.68166666666667,
+      "avg_delivery_minutes": 21.681666666666665,
       "avg_rating": 5.0
     },
     {
@@ -1307,7 +1307,7 @@
       "bad_order_rate": 7.462686567164178,
       "late_delivery_rate": 28.35820895522388,
       "late_pickup_rate": 10.44776119402985,
-      "avg_delivery_minutes": 31.011442786069654,
+      "avg_delivery_minutes": 31.011442786069647,
       "avg_rating": 5.0
     },
     {
@@ -1343,7 +1343,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 24.137931034482758,
       "late_pickup_rate": 6.896551724137931,
-      "avg_delivery_minutes": 26.85804597701149,
+      "avg_delivery_minutes": 26.858045977011493,
       "avg_rating": 5.0
     },
     {
@@ -1355,7 +1355,7 @@
       "bad_order_rate": 6.896551724137931,
       "late_delivery_rate": 13.793103448275861,
       "late_pickup_rate": 6.896551724137931,
-      "avg_delivery_minutes": 27.333333333333336,
+      "avg_delivery_minutes": 27.333333333333332,
       "avg_rating": 5.0
     },
     {
@@ -1379,7 +1379,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 3.8461538461538463,
       "late_pickup_rate": 11.538461538461538,
-      "avg_delivery_minutes": 24.28653846153846,
+      "avg_delivery_minutes": 24.286538461538463,
       "avg_rating": 5.0
     },
     {
@@ -1391,7 +1391,7 @@
       "bad_order_rate": 5.0,
       "late_delivery_rate": 25.0,
       "late_pickup_rate": 20.0,
-      "avg_delivery_minutes": 26.307500000000005,
+      "avg_delivery_minutes": 26.307499999999997,
       "avg_rating": 5.0
     },
     {
@@ -1415,7 +1415,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 7.142857142857142,
       "late_pickup_rate": 0.0,
-      "avg_delivery_minutes": 21.934523809523814,
+      "avg_delivery_minutes": 21.934523809523807,
       "avg_rating": 4.25
     },
     {
@@ -1475,7 +1475,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 19.35483870967742,
       "late_pickup_rate": 6.451612903225806,
-      "avg_delivery_minutes": 25.713440860215055,
+      "avg_delivery_minutes": 25.71344086021505,
       "avg_rating": 5.0
     },
     {
@@ -1487,7 +1487,7 @@
       "bad_order_rate": 17.24137931034483,
       "late_delivery_rate": 37.93103448275862,
       "late_pickup_rate": 37.93103448275862,
-      "avg_delivery_minutes": 30.866666666666667,
+      "avg_delivery_minutes": 30.86666666666667,
       "avg_rating": 5.0
     },
     {
@@ -1523,7 +1523,7 @@
       "bad_order_rate": 14.285714285714285,
       "late_delivery_rate": 23.809523809523807,
       "late_pickup_rate": 19.047619047619047,
-      "avg_delivery_minutes": 26.35555555555555,
+      "avg_delivery_minutes": 26.355555555555558,
       "avg_rating": 5.0
     },
     {
@@ -1583,7 +1583,7 @@
       "bad_order_rate": 9.433962264150944,
       "late_delivery_rate": 24.528301886792452,
       "late_pickup_rate": 16.9811320754717,
-      "avg_delivery_minutes": 25.972327044025157,
+      "avg_delivery_minutes": 25.97232704402516,
       "avg_rating": 4.0
     },
     {
@@ -1667,7 +1667,7 @@
       "bad_order_rate": 4.166666666666666,
       "late_delivery_rate": 12.5,
       "late_pickup_rate": 4.166666666666666,
-      "avg_delivery_minutes": 25.588194444444444,
+      "avg_delivery_minutes": 25.58819444444444,
       "avg_rating": 4.75
     },
     {
@@ -1679,7 +1679,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 26.31578947368421,
       "late_pickup_rate": 15.789473684210526,
-      "avg_delivery_minutes": 35.60087719298245,
+      "avg_delivery_minutes": 35.60087719298246,
       "avg_rating": 5.0
     },
     {
@@ -1703,7 +1703,7 @@
       "bad_order_rate": 10.526315789473683,
       "late_delivery_rate": 19.298245614035086,
       "late_pickup_rate": 19.298245614035086,
-      "avg_delivery_minutes": 31.378362573099412,
+      "avg_delivery_minutes": 31.37836257309942,
       "avg_rating": 4.941
     },
     {
@@ -1763,7 +1763,7 @@
       "bad_order_rate": 12.0,
       "late_delivery_rate": 32.0,
       "late_pickup_rate": 8.0,
-      "avg_delivery_minutes": 31.311333333333334,
+      "avg_delivery_minutes": 31.311333333333337,
       "avg_rating": 5.0
     },
     {
@@ -1775,7 +1775,7 @@
       "bad_order_rate": 4.166666666666666,
       "late_delivery_rate": 25.0,
       "late_pickup_rate": 8.333333333333332,
-      "avg_delivery_minutes": 26.590972222222224,
+      "avg_delivery_minutes": 26.59097222222223,
       "avg_rating": 5.0
     },
     {
@@ -1787,8 +1787,20 @@
       "bad_order_rate": 8.333333333333332,
       "late_delivery_rate": 12.5,
       "late_pickup_rate": 16.666666666666664,
-      "avg_delivery_minutes": 22.725694444444443,
+      "avg_delivery_minutes": 22.725694444444446,
       "avg_rating": 4.0
+    },
+    {
+      "period": "2026-04-27",
+      "provider_name": "КАФЕРИНОК Личаківська",
+      "orders": 17.0,
+      "merchant_price_eur": 10559.0,
+      "honey_order_rate": 64.70588235294117,
+      "bad_order_rate": 5.88235294117647,
+      "late_delivery_rate": 29.411764705882355,
+      "late_pickup_rate": 11.76470588235294,
+      "avg_delivery_minutes": 25.210784313725497,
+      "avg_rating": 5.0
     },
     {
       "period": "2026-04-27",
@@ -1804,18 +1816,6 @@
     },
     {
       "period": "2026-04-27",
-      "provider_name": "КАФЕРИНОК Личаківська",
-      "orders": 17.0,
-      "merchant_price_eur": 10559.0,
-      "honey_order_rate": 64.70588235294117,
-      "bad_order_rate": 5.88235294117647,
-      "late_delivery_rate": 29.411764705882355,
-      "late_pickup_rate": 11.76470588235294,
-      "avg_delivery_minutes": 25.21078431372549,
-      "avg_rating": 5.0
-    },
-    {
-      "period": "2026-04-27",
       "provider_name": "КАФЕРИНОК пл. Є. Петрушевича",
       "orders": 5.0,
       "merchant_price_eur": 2582.0,
@@ -1823,19 +1823,19 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 20.0,
       "late_pickup_rate": 20.0,
-      "avg_delivery_minutes": 22.303333333333335,
+      "avg_delivery_minutes": 22.30333333333333,
       "avg_rating": 5.0
     },
     {
       "period": "2026-05-04",
       "provider_name": "КАФЕРИНОК вул. Зелена",
       "orders": 55.0,
-      "merchant_price_eur": 34386.0,
+      "merchant_price_eur": 34387.0,
       "honey_order_rate": 58.18181818181818,
       "bad_order_rate": 1.8181818181818181,
       "late_delivery_rate": 16.363636363636363,
       "late_pickup_rate": 14.545454545454545,
-      "avg_delivery_minutes": 20.832121212121212,
+      "avg_delivery_minutes": 20.832121212121216,
       "avg_rating": 5.0
     },
     {
@@ -1847,14 +1847,14 @@
       "bad_order_rate": 8.0,
       "late_delivery_rate": 30.0,
       "late_pickup_rate": 20.0,
-      "avg_delivery_minutes": 27.07766666666667,
+      "avg_delivery_minutes": 27.077666666666666,
       "avg_rating": 4.333
     },
     {
       "period": "2026-05-04",
       "provider_name": "КАФЕРИНОК вул. Княгині Ольги",
       "orders": 39.0,
-      "merchant_price_eur": 25592.0,
+      "merchant_price_eur": 25593.0,
       "honey_order_rate": 61.53846153846154,
       "bad_order_rate": 2.564102564102564,
       "late_delivery_rate": 25.64102564102564,
@@ -1871,14 +1871,14 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 16.666666666666664,
       "late_pickup_rate": 10.0,
-      "avg_delivery_minutes": 24.549444444444443,
+      "avg_delivery_minutes": 24.54944444444444,
       "avg_rating": 5.0
     },
     {
       "period": "2026-05-04",
       "provider_name": "КАФЕРИНОК вул. Угорська",
       "orders": 30.0,
-      "merchant_price_eur": 18048.0,
+      "merchant_price_eur": 18049.0,
       "honey_order_rate": 73.33333333333333,
       "bad_order_rate": 3.3333333333333335,
       "late_delivery_rate": 16.666666666666664,
@@ -1890,7 +1890,7 @@
       "period": "2026-05-04",
       "provider_name": "КАФЕРИНОК вул. Спартак/ Замарстинівська, 170Е",
       "orders": 29.0,
-      "merchant_price_eur": 14650.0,
+      "merchant_price_eur": 14651.0,
       "honey_order_rate": 55.172413793103445,
       "bad_order_rate": 3.4482758620689653,
       "late_delivery_rate": 20.689655172413794,
@@ -1967,14 +1967,14 @@
       "bad_order_rate": 9.433962264150944,
       "late_delivery_rate": 20.754716981132077,
       "late_pickup_rate": 18.867924528301888,
-      "avg_delivery_minutes": 28.266037735849054,
+      "avg_delivery_minutes": 28.26603773584906,
       "avg_rating": 4.556
     },
     {
       "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК вул. Зелена",
       "orders": 42.0,
-      "merchant_price_eur": 22123.0,
+      "merchant_price_eur": 22124.0,
       "honey_order_rate": 64.28571428571429,
       "bad_order_rate": 2.380952380952381,
       "late_delivery_rate": 9.523809523809524,
@@ -1986,7 +1986,7 @@
       "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК вул. Героїв УПА",
       "orders": 33.0,
-      "merchant_price_eur": 22947.0,
+      "merchant_price_eur": 22948.0,
       "honey_order_rate": 42.42424242424242,
       "bad_order_rate": 6.0606060606060606,
       "late_delivery_rate": 33.33333333333333,
@@ -2010,7 +2010,7 @@
       "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК вул. Стрийська",
       "orders": 27.0,
-      "merchant_price_eur": 16221.0,
+      "merchant_price_eur": 16222.0,
       "honey_order_rate": 55.55555555555556,
       "bad_order_rate": 0.0,
       "late_delivery_rate": 22.22222222222222,
@@ -2032,6 +2032,18 @@
     },
     {
       "period": "2026-05-11",
+      "provider_name": "КАФЕРИНОК вул. Спартак/ Замарстинівська, 170Е",
+      "orders": 23.0,
+      "merchant_price_eur": 11668.0,
+      "honey_order_rate": 56.52173913043478,
+      "bad_order_rate": 4.3478260869565215,
+      "late_delivery_rate": 21.73913043478261,
+      "late_pickup_rate": 21.73913043478261,
+      "avg_delivery_minutes": 22.695652173913043,
+      "avg_rating": 5.0
+    },
+    {
+      "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК вул. Угорська",
       "orders": 23.0,
       "merchant_price_eur": 13682.0,
@@ -2044,18 +2056,6 @@
     },
     {
       "period": "2026-05-11",
-      "provider_name": "КАФЕРИНОК вул. Спартак/ Замарстинівська, 170Е",
-      "orders": 23.0,
-      "merchant_price_eur": 11667.0,
-      "honey_order_rate": 56.52173913043478,
-      "bad_order_rate": 4.3478260869565215,
-      "late_delivery_rate": 21.73913043478261,
-      "late_pickup_rate": 21.73913043478261,
-      "avg_delivery_minutes": 22.695652173913043,
-      "avg_rating": 5.0
-    },
-    {
-      "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК вул. Володимира Великого",
       "orders": 15.0,
       "merchant_price_eur": 9636.0,
@@ -2063,7 +2063,7 @@
       "bad_order_rate": 6.666666666666667,
       "late_delivery_rate": 13.333333333333334,
       "late_pickup_rate": 26.666666666666668,
-      "avg_delivery_minutes": 25.700000000000003,
+      "avg_delivery_minutes": 25.699999999999996,
       "avg_rating": 4.667
     },
     {
@@ -2082,7 +2082,7 @@
       "period": "2026-05-11",
       "provider_name": "КАФЕРИНОК пл. Є. Петрушевича",
       "orders": 4.0,
-      "merchant_price_eur": 3581.0,
+      "merchant_price_eur": 3582.0,
       "honey_order_rate": 0.0,
       "bad_order_rate": 0.0,
       "late_delivery_rate": 25.0,
@@ -2094,7 +2094,7 @@
       "period": "2026-05-18",
       "provider_name": "КАФЕРИНОК вул. Замарстинівська, 55Д",
       "orders": 62.0,
-      "merchant_price_eur": 37764.0,
+      "merchant_price_eur": 37765.0,
       "honey_order_rate": 54.83870967741935,
       "bad_order_rate": 14.516129032258066,
       "late_delivery_rate": 29.03225806451613,
@@ -2106,12 +2106,12 @@
       "period": "2026-05-18",
       "provider_name": "КАФЕРИНОК вул. Зелена",
       "orders": 53.0,
-      "merchant_price_eur": 31399.0,
+      "merchant_price_eur": 31400.0,
       "honey_order_rate": 64.15094339622641,
       "bad_order_rate": 1.8867924528301887,
       "late_delivery_rate": 11.320754716981133,
       "late_pickup_rate": 11.320754716981133,
-      "avg_delivery_minutes": 23.42169811320754,
+      "avg_delivery_minutes": 23.421698113207555,
       "avg_rating": 5.0
     },
     {
@@ -2123,7 +2123,7 @@
       "bad_order_rate": 10.81081081081081,
       "late_delivery_rate": 16.216216216216218,
       "late_pickup_rate": 24.324324324324326,
-      "avg_delivery_minutes": 23.730180180180177,
+      "avg_delivery_minutes": 23.73018018018018,
       "avg_rating": 5.0
     },
     {
@@ -2135,20 +2135,8 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 18.181818181818183,
       "late_pickup_rate": 18.181818181818183,
-      "avg_delivery_minutes": 23.617676767676762,
-      "avg_rating": 4.8
-    },
-    {
-      "period": "2026-05-18",
-      "provider_name": "КАФЕРИНОК вул. Стрийська",
-      "orders": 32.0,
-      "merchant_price_eur": 19794.0,
-      "honey_order_rate": 56.25,
-      "bad_order_rate": 9.375,
-      "late_delivery_rate": 28.125,
-      "late_pickup_rate": 9.375,
-      "avg_delivery_minutes": 24.748958333333334,
-      "avg_rating": 4.333
+      "avg_delivery_minutes": 23.61767676767677,
+      "avg_rating": 4.833
     },
     {
       "period": "2026-05-18",
@@ -2159,19 +2147,31 @@
       "bad_order_rate": 6.25,
       "late_delivery_rate": 28.125,
       "late_pickup_rate": 21.875,
-      "avg_delivery_minutes": 27.54114583333333,
+      "avg_delivery_minutes": 27.54114583333334,
       "avg_rating": 4.6
+    },
+    {
+      "period": "2026-05-18",
+      "provider_name": "КАФЕРИНОК вул. Стрийська",
+      "orders": 32.0,
+      "merchant_price_eur": 19794.0,
+      "honey_order_rate": 56.25,
+      "bad_order_rate": 12.5,
+      "late_delivery_rate": 28.125,
+      "late_pickup_rate": 9.375,
+      "avg_delivery_minutes": 24.74895833333333,
+      "avg_rating": 4.333
     },
     {
       "period": "2026-05-18",
       "provider_name": "КАФЕРИНОК вул. Угорська",
       "orders": 28.0,
-      "merchant_price_eur": 19950.0,
+      "merchant_price_eur": 19951.0,
       "honey_order_rate": 50.0,
       "bad_order_rate": 3.571428571428571,
       "late_delivery_rate": 32.142857142857146,
       "late_pickup_rate": 32.142857142857146,
-      "avg_delivery_minutes": 23.450000000000006,
+      "avg_delivery_minutes": 23.45,
       "avg_rating": 5.0
     },
     {
@@ -2195,7 +2195,7 @@
       "bad_order_rate": 5.263157894736842,
       "late_delivery_rate": 15.789473684210526,
       "late_pickup_rate": 10.526315789473683,
-      "avg_delivery_minutes": 26.610526315789468,
+      "avg_delivery_minutes": 26.61052631578948,
       "avg_rating": 5.0
     },
     {
@@ -2207,7 +2207,7 @@
       "bad_order_rate": 0.0,
       "late_delivery_rate": 28.57142857142857,
       "late_pickup_rate": 14.285714285714285,
-      "avg_delivery_minutes": 26.638095238095236,
+      "avg_delivery_minutes": 26.63809523809524,
       "avg_rating": 5.0
     },
     {
