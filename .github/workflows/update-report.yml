@@ -5,6 +5,10 @@ on:
     - cron: '0 5 * * 1'  # Понеділок 05:00 UTC = 07:00 Київ (літній час)
   workflow_dispatch:
 
+concurrency:
+  group: update-report
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
